@@ -17,4 +17,9 @@ selectedUser = DUMMY_USERS[random_Index];
 get imagePath(){
   return 'assets/users/' + this.selectedUser.avatar;
 }
+
+//Event listener
+onSelectUser() {
+  console.log('Clicked!')
+}
 }
