@@ -12,4 +12,9 @@ const random_Index = Math.floor(Math.random() * DUMMY_USERS.length)
 })
 export class UsersComponent {
 selectedUser = DUMMY_USERS[random_Index];
+
+// getter property use to fetch the data
+get imagePath(){
+  return 'assets/users/' + this.selectedUser.avatar;
+}
 }
