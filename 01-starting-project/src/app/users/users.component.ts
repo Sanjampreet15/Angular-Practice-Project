@@ -21,5 +21,7 @@ get imagePath(){
 //Event listener
 onSelectUser() {
   console.log('Clicked!')
+  const random_Index = Math.floor(Math.random() * DUMMY_USERS.length)
+  this.selectedUser = DUMMY_USERS[random_Index]
 }
 }
